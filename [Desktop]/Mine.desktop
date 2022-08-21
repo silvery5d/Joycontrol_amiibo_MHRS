@@ -1,0 +1,11 @@
+[Desktop Entry]
+
+Name = Mine
+Exec = sudo python3 /home/pi/joycontrol/run_mhr_mine.py -r auto PRO_CONTROLLER
+Icon = /home/pi/joycontrol/icon/mine.ico
+Terminal = true
+MultipleArgs = false
+Type = Application
+Categories = Application;Development
+StartupNotify = true
+NoDisplay = true

@@ -62,7 +62,7 @@ async def _draw(controller_state, amiibo_dir): # 从Home界面回游戏抽完所
     await asyncio.sleep(1)
 
     for amiibo_bin in os.listdir(amiibo_dir):
-        print('READING ' + amiibo_bin + ' of ' + os.listdir(amiibo_dir).)
+        print('READING ' + amiibo_bin)
         if not amiibo_bin.endswith('.bin'):
             continue
         # goto read amiibo screen

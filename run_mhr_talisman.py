@@ -21,8 +21,6 @@ logger = logging.getLogger(__name__)
 
 async def _start_talisman(controller_state):
     await controller_state.connect()
-    await button_push(controller_state, 'a')
-    await asyncio.sleep(0.3)
     for _ in range(10):
         await button_push(controller_state, 'a')
         await asyncio.sleep(0.3)

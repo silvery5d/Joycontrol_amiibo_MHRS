@@ -1,0 +1,11 @@
+[Desktop Entry]
+
+Name = AmiiboSix
+Exec = sudo python3 /home/pi/joycontrol/run_mhr_amiibo1.2.py -r auto --amiibo /home/pi/joycontrol/amiibo PRO_CONTROLLER
+Icon = /home/pi/joycontrol/icon/magic.ico
+Terminal = true
+MultipleArgs = false
+Type = Application
+Categories = Application;Development
+StartupNotify = true
+NoDisplay = true

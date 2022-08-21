@@ -1,0 +1,11 @@
+[Desktop Entry]
+
+Name = TalismanTen
+Exec = sudo python3 /home/pi/joycontrol/run_mhr_talisman.py -r auto PRO_CONTROLLER
+Icon = /home/pi/joycontrol/icon/rocket.ico
+Terminal = true
+MultipleArgs = false
+Type = Application
+Categories = Application;Development
+StartupNotify = true
+NoDisplay = true
