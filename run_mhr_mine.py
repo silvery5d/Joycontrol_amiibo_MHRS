@@ -21,9 +21,19 @@ logger = logging.getLogger(__name__)
 
 async def _start_mine(controller_state):
     await controller_state.connect()
+    l_stick_state = controller_state.l_stick_state
+
     for _ in range(10000):
         await button_push(controller_state, 'a')
         await asyncio.sleep(5)
+        l_stick_state.set_up() 
+        await asyncio.sleep(1)
+        l_stick_state.set_center() 
+        await button_push(controller_state, 'a')
+        await asyncio.sleep(5)
+        l_stick_state.set_down()
+        await asyncio.sleep(1)
+        l_stick_state.set_center()
 
 async def _main(args):
     controller = Controller.from_arg(args.controller)
