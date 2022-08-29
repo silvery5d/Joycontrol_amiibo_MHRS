@@ -31,14 +31,3 @@ sudo python3 /home/pi/joycontrol/run_controller_cli.py PRO_CONTROLLER
 
 
 运行过程中如果有出现错误可以按switch的电源键进行断开。
-
-
-
-### PS：非Switch Lite机型请注意：
-由于机型的菜单选项不一致，所以对大Switch来说，run_mhr_amiibo1.2.py 脚本中第121行
-
-> for _ in range(5)
-
-需要修改为
-
-> for _ in range(10)
