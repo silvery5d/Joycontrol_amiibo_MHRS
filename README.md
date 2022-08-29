@@ -10,12 +10,12 @@ sudo python3 /home/pi/joycontrol/run_controller_cli.py PRO_CONTROLLER
 
 ## run_mhr_amiibo.py
 自动模拟爵银龙amiibo并完成抽奖-改时间的循环。使用方法在扫货商处将选项停留在“读取Amiibo”上，按Home键回到主界面。运行指令
-> sudo python3 /home/pi/joycontrol/run_mhr_amiibo1.2.py -r auto --amiibo /home/pi/joycontrol/amiibo
+> sudo python3 /home/pi/joycontrol/run_mhr_amiibo.py -r auto --amiibo /home/pi/joycontrol/amiibo
 
 其中 **/home/pi/joycontrol/run_mhr_amiibo1.2.py** 为此python文件路径， **/home/pi/joycontrol/amiibo** 为放置amiibo文件夹的路径
 
 若为Lite机型，则需要增加--lite参数
-> sudo python3 /home/pi/joycontrol/run_mhr_amiibo1.2.py -r auto --amiibo /home/pi/joycontrol/amiibo --lite true
+> sudo python3 /home/pi/joycontrol/run_mhr_amiibo.py -r auto --amiibo /home/pi/joycontrol/amiibo --lite true
 
 ## run_mhr_mine.py
 自动挂机获取点数。使用前需要停留在一个特点矿旁边。推荐城塞高地的塔中远古箱子旁边，推荐先获取“收获祭”或者“换算术”丸子技能。运行指令
