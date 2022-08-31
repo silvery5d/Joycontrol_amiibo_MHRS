@@ -1,8 +1,8 @@
 [Desktop Entry]
 
-Name = AmiiboSix
+Name = AmiiboSixLite
 Exec = sudo python3 /home/pi/joycontrol/run_mhr_amiibo.py -r auto --amiibo /home/pi/joycontrol/amiibo --lite true
-Icon = /home/pi/joycontrol/icon/magic.ico
+Icon = /home/pi/joycontrol/icon/tree.ico
 Terminal = true
 MultipleArgs = false
 Type = Application
