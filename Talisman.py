@@ -68,6 +68,27 @@ class Talisman:
                     n[4-self.slots[2]] += 1
         return n
     
+    def getSkillID(name):
+        import pandas as pd
+        skillsrank = pd.read_excel('.\Skills.xlsx',sheet_name='SkillsRank')
+        skillsrank.set_index(["ID"], inplace = True)
+        _result = skillsrank.loc[skillsrank['Name'] == name].index.values.tolist()
+        #print(_result)
+        if len(_result) == 1:
+            return _result[0]
+        else: 
+            print(name,"没有完全匹配")
+            _possible1 = skillsrank.loc[skillsrank.Name.str.contains(name)].index.values.tolist()
+            #print(_possible1)
+            if len(_possible1) == 1:
+                return _possible1[0]
+            elif len(_possible1) > 1:
+                #包含查找有多个结果
+                return 0
+            else:
+                #包含查找没有结果
+                return 0
+
     def canSupply(effslots, extraskills):        #有效孔能否提供这些技能
         import pandas as pd
         import numpy as np
